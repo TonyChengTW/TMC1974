@@ -1,0 +1,19 @@
+﻿#circle {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+    #circle div {
+        background-image: url('/Mobile/Images/hsu.jpg');
+        background-size: cover;
+        background-position: center left;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+img {
+    max-width:100%;
+    height:auto;
+}

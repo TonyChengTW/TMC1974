@@ -1,0 +1,3 @@
+string connectionstring = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + HttpContext.Current.Server.MapPath("~/demo.mdb");
+
+connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=H:\Documents and Settings\Administrator\орн▒\Demo\demo.mdb

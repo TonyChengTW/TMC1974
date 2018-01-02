@@ -1,0 +1,525 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+
+
+#header  {
+background:url(../images/bg.jpg) top repeat-x;
+	height:490px; width:100%;}
+.topframe {
+	width:1024px;height:150px;  margin:0px auto;}
+
+.topframe .slogan{
+float:right; width:800px;
+text-align: right; padding-bottom:5px;
+color:#e9e296; font-size:10px;
+font-family:"新細明體"; }
+.topframe .slogan img{ margin-bottom:-5px}
+
+
+
+/*FOOTER*/
+#footer {/*position: relative;*/margin-top:-35px;
+background:url(../images/footer_bg.jpg) left top repeat-x;
+height:174px; width:100%; clear:both; font-size:10px;}
+.footerframe {
+width:1024px;height:174px;  margin:0px auto;}
+.footerframe p a{color:#bc8638;}
+.footerframe p{color: #bc8638; line-height:18px; float:left;padding-top:80px;padding-left:10px}
+.footerframe img{padding-top:70px; padding-left:30px}
+/*FOOTER END*/
+
+
+
+/*主選單背景*/
+#topnavBg{
+	height:43px; width:1024px;
+	margin:0px auto;
+}	
+.navframe {
+	width:1000px;height:43px;  margin:0px auto;
+	background: url(../images/menu_bg.png) top no-repeat;}
+
+.searchbox{ background:url(../images/search_01.png) top left no-repeat; float:right; width:215px}
+.searchbox .but{ background:url(../images/search_02.png) top right no-repeat; width:50px; height:30px;float:right;}
+/*內容版塊*/
+#indexframe {
+width:972px; margin:0 auto;
+ padding:26px;
+background:url(../images/main_bg.png) center repeat-y;
+/* overflow : auto; IE7 IE8 Firefox Chrome Safari */overflow-x:hidden; overflow-y:hidden;
+  _width : 50%;  /* IE6 */}
+.maintop{ width:1024px; height:45px; margin:0 auto; background:url(../images/main_top.png) top no-repeat;}
+
+
+.purpose_frame{ background:url(../images/Purpose_bg.jpg) left top repeat-x;
+width:990px; height:248px; margin:-24px -15px 0 -15px; padding-top:20px; text-align:center}
+
+
+/*內容版塊 - 03 - 活動實況*/
+.Activity_frame{ 
+background:url(../images/index_video_bg.png) top left no-repeat;
+margin:0 -15px -26px -14px; width:990px; height:280px;}
+.Activity_frame h2{ color:#fff; letter-spacing:5px; margin-top:0; padding-left:85px; padding-top:3px}
+
+.Activity_frame .videobox{
+width:340px; float:left; margin-left:15px}
+.Activity_frame .videobox .title{
+font-size:18px; color:#db5915; width:340px; height:50px; background: url(../images/video_title.png) left bottom no-repeat}
+
+
+.Activity_frame .photobox{ 
+width:242px; height:245px; float:right; margin-top:-20px; margin-right:10px}
+.Activity_frame .photobox a img{
+	 padding:1px; border:1px solid #999; background-color:#fff}
+.Activity_frame .photobox .title{
+background:url(../images/index_album.png) top no-repeat; width:233px; height:40px; 
+padding-top:7px; padding-left:5px; color:#fff; font-size:15px;}
+.Activity_frame .photobox .title a span{
+font-family: "新細明體", Arial; color:#fff6ec; font-size:11px; float:right;padding-top:3px;}
+.Activity_frame .photobox .title a:hover span{
+	color:#632200}
+
+
+
+
+
+/*首頁內容區塊: 活動&課程列表*/
+.indexbox{	width:980px; padding-top:10px}
+
+.indexbox .title{ background:url(../images/title_bg.jpg) top left no-repeat; height:35px; color:#fff;font-size:15px;
+ padding:5px}
+
+.indexbox .title a span{
+font-family: "新細明體", Arial; color:#fff6ec; font-size:11px; float:right;padding-top:3px;}
+.indexbox .title a:hover span{
+	color:#632200}
+
+.leftframe{
+	width: 340px;
+	float: left;margin-bottom:15px }
+	
+.leftframe .newnavbar{ width:335px; float:right; }
+.leftframe .newnavbar img{ margin-right:10px;padding:1px; border:1px solid #999; background-color:#fff}
+
+.rightframe{ width: 300px; float:right;}
+.rightframe .newnavbar h5{width:15em;}
+
+.newdate{background:url(../images/date.png) right top no-repeat; text-align:center; color:#FFF; width:55px; height:55px; font-family:"Arial";}
+.newdate h2{ padding-top:5px; margin-bottom:13px}
+.newdate p{ font-size:12px;}
+
+.newnavbar{width:210px; }
+
+.newnavbar h5{
+margin-top:0; margin-bottom:15px;
+width:25em; background:url(../images/arrow.png) left center no-repeat; padding-left:20px;
+white-space:nowrap;
+text-overflow:ellipsis;
+-o-text-overflow:ellipsis;
+overflow: hidden;}
+
+.newnavbar h5 a:link,
+.newnavbar h5 a:visited {color:#3a2202;}
+.newnavbar h5 a:hover{color:#db482e;}
+
+.newnavbar p{ font-size:10px; margin-top:-10px;}
+.newnav { float: right;width:210px; height:50px;
+}
+
+
+
+/*---------- 首頁設定 END -------*/
+
+/*內頁-麵包屑*/
+.breadcrumb { float:right;color:#666; text-align: right;width:100%; font-size:12px; font-family:"新細明體", Arial; margin:30px 35px 0 0}
+.breadcrumb a{ color:#666;}
+.breadcrumb a:hover { color:#995200;}
+.breadcrumb span{color:#995200;}
+
+#mainframe {
+width:972px; margin:0 auto;
+padding:0 26px;
+background:url(../images/main_bg.png);
+background-position: center 545px;
+/* overflow : auto; IE7 IE8 Firefox Chrome Safari */overflow-x:hidden; overflow-y:hidden;
+  _width : 50%;  /* IE6 */}
+  
+#mainframe .page_title{background:url(../images/arrow.jpg) top left no-repeat; float:left;width:80%; height:20px; font-size:18px; color:#333; padding-left:20px; margin-bottom:10px} 
+
+#mainframe .notebox{
+background:url(../images/main_note.jpg) bottom left repeat-y; font-size:21px; color:#000;
+padding:10px 10px 30px 10px; text-align:left; clear:both}
+
+
+/*人物名單*/
+.core_item{ color:#333; float:left;}
+.core_item .titbg{ background:url(../update/about/item_bg.jpg) right top repeat-y; height:30px; color:#fff; font-size:15px; padding-left:10px;}
+.core_item img{
+padding:2px; margin-left:10px; border:1px solid #ccc; background-color:#fff;}
+.core_item h2{ padding-top:10px;}
+.core_item h3 span{ font-size:15px;}
+.core_item h2, .core_item h3, .core_item h4, .core_item p{padding-left:10px; margin:0;}
+.core_item p span{ color:#e77829}
+
+
+/*人物名單 - 師資*/
+.faculty_item{color:#333; float:left; margin-right:20px;}
+.faculty_item .imgbg{ background:url(../update/about/f_img_bg.jpg) top left no-repeat;}
+.faculty_item h2{ margin:0; padding-left:10px;}
+.faculty_item h2 span{font-size:15px;}
+
+.faculty_item p{padding-left:10px;}
+.faculty_item p span{color:#e77829}
+.faculty_item img{
+padding:2px; border:1px solid #ccc; background-color:#fff; margin:0}
+
+
+
+
+
+/*內頁 - 新聞列表*/
+.newsframe { width: 330px;height: 230px;float: left; padding-right:20px;}
+.new_Rightnav{ width:210px;line-height: 30px;}
+.new_Rightnav .titbg{width:210px; background:url(../images/news_list_bg.jpg) top left no-repeat;padding-left:10px; height:70px; color:#fff; font-size:16px; letter-spacing:2px}
+
+.newslist{ line-height:18px; 
+padding:15px 0;
+ border-bottom:1px dashed #999}
+.newslist p, .newslist h3{ color:#333; margin:0 0 10px 0;}
+.newslist h3 { line-height:24px}
+.newslist p span{ color:#df5208;
+font-size:13px; font-family:Arial bold;  margin-left:-5px}
+.newslist h3 a:link, .newslist h3 a:visited{ color:#3a2202; text-decoration:underline;}
+.newslist h3 a:hover{color:#df5208;}
+.newslist a img{padding:1px; border:1px solid #999; background-color:#fff; margin-right:20px}
+
+.newslist .date{background:url(../images/date.png) left top no-repeat; color:#FFF; width:55px; height:55px; font-family:"Arial";}
+.newslist .date h2{ padding-top:5px; padding-left:14px; margin:0}
+.newslist .date p{ margin:0; color:#fff;padding-left:5px;}
+
+
+/*左側次選單*/
+#menu { 
+width:210px;
+margin:0 auto; 
+list-style-type:none; 
+text-align: left; 
+} 
+#menu li { margin-left:-40px;}
+#menu li a { 
+border-bottom:#f8d4bc 2px solid;
+font-size:15px;color:#3a2202;
+height:30px; padding-left:10px;width:195px;
+display:block;margin:0;  
+line-height:30px; 
+white-space:nowrap;
+text-overflow:ellipsis;
+-o-text-overflow:ellipsis;
+overflow: hidden;
+}
+
+#menu li a:hover {border-left:5px solid #c3270c; 
+background-color:#f4a646; color:#fff;}
+
+#menu li ul { 
+padding-left:10px;
+margin:0px auto; 
+list-style-type:none; 
+text-align: left; 
+} 
+#menu li ul a {font-size:13px;
+background:url(../images/arrow_menu.png) left no-repeat; padding-left:20px;
+height:30px; 
+display:block;  
+line-height:30px; 
+}
+
+
+/*-------------------------------------*/
+
+
+/* turn page 分頁樣式 */
+div.turnpage {
+	/*border-top:#999 1px dashed;*/
+	 font-size:12px;
+	margin:10px auto;color:#b8103f;
+	padding-top:15px;
+	text-align:center; clear:both;
+}
+div.turnpage a:link,
+div.turnpage a:visited {
+/*	margin:0 1px;*/
+	background:#fff;padding:2px 5px;
+	/*border-right:#999 1px solid;*/
+	color:#b8103f;
+	
+}
+div.turnpage p{ text-align:center; clear:both; margin-right:100px;color:#b8103f;}
+/*
+div.turnpage a:hover {
+	background:#71a63e;
+	border:#999 1px solid;
+	color:#fff;
+} */
+div.turnpage a:hover, div.turnpage span {
+/*	margin:0 1px;*/padding:2px 5px;
+	background:#b8103f;	
+	color:#fff;
+}
+
+/*影片頁面*/
+.videolist{ width:295px; height:280px; float:left;}
+.videolist .tit{ background:url(../images/video_info.png) top left repeat-y; padding:0 5px 0 15px}
+.videolist p{margin:0}
+.videolist td{ margin:0}
+
+
+
+/*相簿頁面*/
+.gallerybox{ width:455px; float:left; background:url(../images/gallerybox_bg.jpg) top left; padding-bottom:15px; padding-right:10px; margin-right:10px
+}
+.gallerybox .img{ float: left; margin:0}
+.gallerybox h2{ width:225px; float:right; font-size:19px; margin-top:37px;}
+.gallerybox p{width:210px; float:right; margin:0; padding:10px 10px 0 0; font-weight:normal;}  
+.gallerylist{width:124px; height:110px; margin:0px 4px 10px 0px; float:left; padding:10px 6px; background:url(../images/gallery_list.jpg) top left no-repeat;
+/*overflow : auto;  IE7 IE8 Firefox Chrome Safari */
+  _width : 50%;  /* IE6 */ overflow-x:hidden; overflow-y:hidden;}
+
+/*-----社友心得------*/
+.article{ line-height:18px; 
+padding:10px 0; float:left; margin-right:20px;
+ border-bottom:1px dashed #ccc;}
+.article p, .article h3{ color:#333; margin:0 0 5px 0;}
+.article h3 { line-height:24px}
+.article p span{ color:#df5208; margin-left:-5px ;}
+.article h3 a:link, .article h3 a:visited{ color:#3a2202; text-decoration:underline;}
+.article h3 a:hover{color:#df5208;}
+
+.article a img{position:relative;
+padding:1px; border:1px solid #999; background-color:#fff; margin-right:20px; margin-left:20px;
+z-index:1;}
+
+.namecard_a{
+position:relative;
+background:url(../images/name_card_a.png) bottom center no-repeat; width:43x; height:14px;
+padding:15px 50px; text-align:center;
+color:#fff; margin-top:-40px; font-size:15px;
+z-index:200;}
+.namecard_b{
+position:relative;
+background:url(../images/name_card_b.png) bottom center no-repeat; width:43x; height:14px;
+padding:15px 50px; text-align:center;
+color:#fff; margin-top:-40px; font-size:15px;
+z-index:200;}
+
+/*-----------------------*/
+.dldate{color:#e69982; font-family:Arial; font-weight:bold; font-size:13px;border-bottom:1px #ddd solid;}
+.dlform{border-bottom:1px #ddd solid; font-size:13px; font-family:"新細明體", Arial;}
+
+/*-----------------------*/
+.form_c{background:url(../images/form_bg_d.jpg) bottom left repeat-x; color:#fff; padding:15px 5px 10px 5px; font-size:15px;}
+.form_c2{ border-bottom:1px #d5491d solid;font-size:15px; color:#333; padding-left:10px; padding-top:5px}
+.form_class{ background:url(../images/class_info.jpg) top left no-repeat; padding:30px 20px 7px 20px; color:#d5491d; font-size:18px }
+.form_d{ border:2px #e18027 solid;}
+.form_d2{ border-bottom:2px #e18027 solid; color:#fff; font-size:15px }
+.form_d3{border-bottom:2px #fff solid;color:#d78500; font-size:15px; padding:10px 5px}
+.form_d4{ border-bottom:2px #fff solid;
+color:#773000; font-size:15px; padding-left:10px}
+
+.form_e{border-bottom:3px solid #fff; border-top:2px solid #ffda00;font-size:15px; padding:10px; color:#773000}
+.form_e2{border-bottom:3px solid #fff; font-size:15px; padding:10px; color:#773000}
+.form_e h4, .form_e2 h4{ color:#fff; margin:0}
+
+
+
+/*-----------------------*/
+.title{font-size: 15px; margin-top:3px;float:left;}
+.title a{ color:#000;text-decoration: none;}
+.title :hover{ color:#222;text-decoration: none;}
+.textbox{font-family: Arial,"微軟正黑體","新細明體",;font-size: 12px;color: #433c36;float:left; width:100%;}
+
+
+
+/* QA */
+div.list_QA {
+/*	width:730px;*/
+	margin:0 auto;
+}
+#vertical_menu {
+	width:100%;
+}
+#vertical_menu span {
+	display:block;
+}
+#vertical_menu ol {
+	margin:0;padding:0;
+}
+#vertical_menu ol li {
+background: url(../images/icon_q.png) left top no-repeat;
+/*	list-style:decimal inside;*/
+list-style:none;padding:5px 0 0 0; 
+padding-left:35px; 
+margin-bottom:10px;
+	cursor:pointer;
+}
+#vertical_menu ol li span { 
+background-color:#fff19f; border-bottom:3px solid #e7d58c;color:#7e4300; font-size:15px; 
+padding:3px 5px;
+}
+#vertical_menu ul.collapsed, #vertical_menu ul.expand {
+	width:100%;color:#333; line-height:18px; font-size:15px;
+}
+#vertical_menu ul.collapsed {
+	height:0px;
+	overflow: hidden;
+	padding:0px;
+ 	*position:relative;
+}
+#vertical_menu ul.expand {
+	padding:0px;
+	*position:relative;
+}
+#vertical_menu ul.collapsed li, #vertical_menu ul.expand li {
+/*background: url(../images/icon_a.png) left top no-repeat;*/
+display:block; background:url(../images/qa_bg.jpg) bottom right no-repeat;
+color:#734511; padding:10px 80px 10px 20px;
+}
+#vertical_menu ul.collapsed a, #vertical_menu ul.collapsed a:link, #vertical_menu ul.collapsed a:visited, #vertical_menu ul.expand a, #vertical_menu ul.expand a:link, #vertical_menu ul.expand a:visited {
+
+	display:block;
+/*		color:#FFF;padding:0.3em 0.5em;*/
+	text-decoration:none;
+}
+#vertical_menu ul.collapsed a:hover, #vertical_menu ul.expand a:hover {
+	display:block;
+/*	;padding:0.3em 0.5em;*/
+	text-decoration:none;
+}
+
+
+/*討論區 圖片跑馬燈*/
+
+.webwidget_slideshow_common{
+position: relative; float:right;
+width:250px;
+margin:0; margin-top:-20px; padding-right:10px;
+}
+.webwidget_slideshow_common a{	
+line-height:17px;color:#666;
+text-decoration:none;
+font-family: "微軟正黑體", "新細明體", Arial;
+font-size: 14px; text-align:center}
+.webwidget_slideshow_common .slides_box{
+padding: 0px;margin: 0px;position: absolute; 
+}
+
+.boardbox{ margin-top:-10px; margin-bottom:20px; line-height:18px;width:740px;}
+.boardbox a{ font-size:13px; color:#724e3f;}
+.boardbox p, .boardbox p a{ font-size:13px; color:#333; 
+margin:3px;}
+.boardbox p a:hover{color:#bc8638;}
+.boardbox p b{ font-size:15px; color:#F33}
+
+.boardbox span a{font-size:12px; 
+margin-left:10px;color:#724e3f; border-bottom:1px solid}
+.boardbox span a:hover{color:#bc8638;}
+
+.boardbox select { margin-right:10px}
+
+
+
+
+/* 討論區表格樣式 */
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+table.hovertable {
+	font-size:13px;}
+table.hovertable th {
+	background-color:#ffb400;
+	padding: 8px;font-size:15px; letter-spacing:3px
+
+}
+table.hovertable tr {
+	background-color:#f1e5a3;
+}
+table.hovertable tr.odd {
+	background-color:#f1ecc0;
+}
+table.hovertable td {
+padding: 8px;font-size:15px;color:#3c1e13;
+}
+table.hovertable td a{
+color:#4a2613;font-size:16px;}
+table.hovertable td a:hover{
+color:#363228;}
+
+<!-- Table goes in the document BODY -->
+
+
+/* 討論區 turn page 分頁樣式 */
+div.turnpage2 {
+width:100%; }
+div.turnpage2 a:link,
+div.turnpage2 a:visited {
+background-color:#f1ecc0; color:#5e3221; 
+padding:3px 5px 2px 8px;
+}
+div.turnpage2 a:hover, div.turnpage2 span {
+color:#fff; background-color:#532a18;
+padding:3px 5px 2px 8px;
+}
+div.turnpage2 p{ letter-spacing:normal; color:#5e3221}
+div.turnpage2 p span {
+color:#5e3221; background-color:#ffb400;
+padding:3px 5px; font-family: Arial bold
+}
+/*新增按鈕變換圖片*/
+button.board {
+background:url(../images/but_search.png) left top no-repeat;
+margin:0 2px; width:60px; height:25px;
+cursor:pointer;
+color:#fff; border:none;
+font-size:12px; letter-spacing:2px/*for ie6 7*/
+	/*font-size:13px; /* Chrome、Safari支持 */}
+
+button.board:hover{background:url(../images/but_search_over.png) left top no-repeat; border:none}
+
+
+button.page {
+background:url(../images/but_page.png) top center no-repeat;
+width:80px; height:25px;
+cursor:pointer;
+color:#fff; border:none;
+font-size:12px;/*for ie6 7*/
+	/*font-size:13px; /* Chrome、Safari支持 */}
+
+button.page:hover{
+background:url(../images/but_page_over.png) top center no-repeat;border:none}
+
+
+button.message {
+	background-color:#c93622;
+	background-size:100% 100%;
+	border-radius:5px;
+	border:1px #c93622 solid;
+	margin:0 2px; margin-right:5px;
+	*border:1px #999 solid;
+	cursor:pointer;
+	color:#fff;
+	*background-color:#c93622;
+	font-size:13px;
+	/*for ie6 7*/
+	/*font-size:13px; /* Chrome、Safari支持 */
+	
+}
+/*新增按鈕變換圖片*/
+
+button.message:hover{
+background-size:100% 100%; background-color:#650115; border: 1px solid #650115}
+
+
+
+table.normal td{ padding:0 20px;}
+
+

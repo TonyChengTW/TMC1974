@@ -1,0 +1,150 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="boardcount.aspx.vb" Inherits="Testcount" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>討論區排行榜</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="DIV1" runat="server">
+<asp:AccessDataSource ID="AccessDataSource3" runat="server" DataFile="~/App_Data/Tmc.mdb"
+            SelectCommand="SELECT [aa].人名,sum ([aa].合計) AS 合計
+FROM [select * from (SELECT talk.who as 人名, Count(talk.who) AS 合計 FROM talk where talk.dcreate>=#10/2/2014#
+GROUP BY talk.who
+union 
+SELECT talkRe.re_who as 人名, Count(talkRe.re_who) AS 合計
+FROM talkRe
+WHERE talkRe.dcreate>=#10/2/2014#
+GROUP BY talkRe.re_who )
+]. AS [aa]
+GROUP BY [aa].人名  ORDER BY Sum(aa.合計) DESC ;">
+        </asp:AccessDataSource>
+
+        <asp:AccessDataSource ID="AccessDataSource4" runat="server" DataFile="~/App_Data/Tmc.mdb"
+            SelectCommand=" SELECT talk.who as 人名 , Count(talk.who) AS 合計 FROM talk WHERE (((talk.dcreate)>=#10/2/2014#))
+GROUP BY talk.who  ORDER BY  Count(talk.who) DESC ">
+        </asp:AccessDataSource>
+ <asp:AccessDataSource ID="AccessDataSource5" runat="server" DataFile="~/App_Data/Tmc.mdb"
+            SelectCommand=" SELECT talkRe.re_who as 人名 , Count(talkRe.re_who) AS  合計 FROM talkRe WHERE (((talkRe.dcreate)>=#10/2/2014#)) GROUP BY talkRe.re_who ORDER BY  Count(talkRe.re_who) DESC ">
+        </asp:AccessDataSource>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 80%" align="center">
+            <tr  >
+                <td align="center" style="width: 100% ">
+                    姓名前面不留空白，留言姓名一致，留言排行榜筆數才會一樣!!!!</td>
+ 
+
+            </tr>
+           
+        </table>
+<br />
+      
+
+<table border="0" cellpadding="0" cellspacing="0" style="width: 50%" align="center">
+            <tr  >
+ 
+               <td align="center" style="width: 100%;; background-color: #ffffcc; text-align: center">
+                   <font style="font-size: 24pt">128期留言排行</font>
+                </td>
+</tr>
+<tr>
+              <td align="center" style="width: 100%; background-color: #ffffcc; text-align: center">
+                    <strong><span style="font-size: 24pt"  ><span style="color:Red"><asp:Label ID="Label1" runat="server" Text=""></asp:Label></span></span></strong>
+                </td>
+
+
+            </tr>
+           
+        </table> 
+        <br />
+
+<table border="1" style="width: 50%" align="center">
+            <tr >
+                <td align="center" style="width: 460px; color: #ffffff; background-color: #ff0066; text-align: center;" valign="top">
+                    總排行(新增主題+回覆)</td>
+            </tr>
+            <tr >
+                <td  valign="top" align="center">
+                    <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False"
+                        DataSourceID="AccessDataSource3"  Width="100%"  CellPadding="4" ForeColor="#333333" GridLines="None" ShowFooter="True">
+<FooterStyle BackColor="#FFFFCC" />
+                        <Columns>
+                           <asp:BoundField DataField="人名" HeaderText="人名" SortExpression="人名"  />  
+                             <asp:TemplateField HeaderText="體系">  <HeaderStyle HorizontalAlign="Left" /></asp:TemplateField>
+                            <asp:BoundField DataField="合計" HeaderText="合計" ReadOnly="True" SortExpression="合計" />  
+                        </Columns>
+                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <RowStyle BackColor="#EFF3FB" />
+                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <EditRowStyle BackColor="#2461BF" />
+                        <AlternatingRowStyle BackColor="White" />
+                    </asp:GridView>
+                </td>
+            </tr>
+        </table>
+<br />
+
+        <br />
+        <br />
+        <table border="1" style="width: 50%" align="center">
+            <tr  >
+                 <td align="center" style="width: 460px; color: #ffffff; background-color: #ff0066; text-align: center;" valign="top">
+                    新增主題次數排行</td>
+            </tr>
+            <tr >
+                <td  valign="top" align="center">
+                    <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False"
+                        DataSourceID="AccessDataSource4"  Width="100%"   CellPadding="4" ForeColor="#333333" GridLines="None" ShowFooter="True">
+<FooterStyle BackColor="#FFFFCC" />
+                        <Columns>
+                           <asp:BoundField DataField="人名" HeaderText="人名" SortExpression="人名" />
+                            <asp:BoundField DataField="合計" HeaderText="合計" ReadOnly="True" SortExpression="合計" />
+                        </Columns>
+                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <RowStyle BackColor="#EFF3FB" />
+                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <EditRowStyle BackColor="#2461BF" />
+                        <AlternatingRowStyle BackColor="White" />
+                    </asp:GridView>
+                </td>
+            </tr>
+        </table>
+<br />
+        <br />
+        <br />
+<table border="1" style="width: 50%" align="center">
+            <tr  >
+                <td align="center" style="width: 460px; color: #ffffff; background-color: #ff0066; text-align: center;" valign="top">
+                    回覆次數排行</td>
+            </tr>
+            <tr >
+                <td  valign="top" align="center">
+                    <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False"
+                        DataSourceID="AccessDataSource5"   Width="100%"   CellPadding="4" ForeColor="#333333" GridLines="None" ShowFooter="True">
+<FooterStyle BackColor="#FFFFCC" />
+                        <Columns>
+                           <asp:BoundField DataField="人名" HeaderText="人名" SortExpression="人名" />
+                            <asp:BoundField DataField="合計" HeaderText="合計" ReadOnly="True" SortExpression="合計" />
+                        </Columns>
+                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <RowStyle BackColor="#EFF3FB" />
+                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <EditRowStyle BackColor="#2461BF" />
+                        <AlternatingRowStyle BackColor="White" />
+                    </asp:GridView>
+                </td>
+            </tr>
+        </table>
+        <br />
+    
+    </div>
+    </form>
+</body>
+</html>

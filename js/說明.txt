@@ -1,0 +1,6 @@
+easySlider1.7.js
+jquery.js
+---------for 首頁大圖輪撥 / easySlider
+
+superfish.js
+---------for 選單

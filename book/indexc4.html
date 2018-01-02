@@ -1,0 +1,34 @@
+﻿ <!DOCTYPE html>
+    <html xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+    </head>
+    <body>
+
+    <a href="#" onClick="postToFacebook()">Post to Facebook</a>
+
+    <script>
+    function postToFacebook() {
+      var body = 'Reading JS SDK documentation';
+FB.api('/me/feed', 'post', { message: body }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
+    }
+    </script>
+
+    <div id="fb-root"></div>
+    <script>
+    function login() {
+    FB.login(function(response) {
+        if (response.authResponse) {
+            init();
+        }
+    }, { scope: 'email,publish_stream,user_about_me,user_likes,user_birthday,user_status' });
+}
+    </script>
+
+    </body>
+    </html>

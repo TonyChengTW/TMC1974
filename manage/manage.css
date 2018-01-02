@@ -1,0 +1,66 @@
+.TableHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #999999;
+}
+.TableColName {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #636563;
+	background-color: #DEDFDE;
+}
+.TableColValue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.Comment12font {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #FF0000;
+}
+.Desc-Type01 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0066CC;
+	font-weight: bold;
+}
+.Button-Type01 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000000;
+}
+.Select-Type01 {
+	background-color: #FFFFCC;
+	border: medium dotted #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000000;
+}
+.copyfont {  font-size: 10pt; line-height: 20px}
+a:link {  color: #3366CC; text-decoration: none}
+a:hover {  color: #CC0033; text-decoration: underline}
+a:visited {  text-decoration: none}
+.TableSubColValue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #0000FF;
+}
+.Tooltip {
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=gold, EndColorStr=#FFFFFF);
+}
+.Button-Type02 {
+	border: 1px solid;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.TextBox-Type01 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #FFFFCC;
+	border: 1px solid;
+}

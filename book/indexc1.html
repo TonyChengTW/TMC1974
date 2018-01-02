@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head runat="server">
+<title>Facebook StreamPublish Test</title>
+<style type="text/css">
+#FacebookOAuthGraphTest {
+	width:550px;
+	height:400px;
+	margin:0 auto;
+}
+</style>
+</head>
+<body>
+<div align="center">
+<div id="flashContent"></div>
+</div>
+<div id="fb-root"></div> 
+
+<script type="text/javascript" src="Scripts/swfobject.js"></script>
+<script type="text/javascript">
+    var flashVars = {};
+    var params = { menu: "false", allowScriptAccess: "always" };
+    params.wmode = "opaque";
+    var attributes = { id: "FacebookOAuthGraphTest", name: "FacebookOAuthGraphTest" };
+    swfobject.embedSWF("main.swf", "flashContent", "550", "400", "9.0.47", "Scripts/expressInstall.swf", flashVars, params, attributes);
+</script>
+
+<script type="text/javascript">
+
+    function streamPublishForFriend() {
+FB.api('/me/feed', 'post', { body: body }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response);
+  }
+});
+
+        }
+</script>
+
+
+<a href="javascript:sstreamPublishForFriend();">以 st發布</a>
+
+
+       
+</body>
+</html>

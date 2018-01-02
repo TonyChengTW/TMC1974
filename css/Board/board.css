@@ -1,0 +1,12 @@
+﻿#myDiv {
+    overflow: hidden;
+    width: 200px;
+    float: right;
+    background-color: fff;
+    font-size: 13px;
+}
+
+    #myDiv img {
+        border: 1px solid;
+        width: 200px;
+    }

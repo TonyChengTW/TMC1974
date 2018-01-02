@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Demo: Publish on Facebook Wall Using Javscript SDK and FB.api</title>
+        <style type="text/css">
+            body{text-align: center}
+        </style>
+    </head>
+    <body>
+        <h1>Publish on Facebook Wall Using Javscript SDK and FB.api</h1><br/><br/>
+        <div id="fb-root"></div>
+
+        <script src="http://connect.facebook.net/en_US/all.js#appId=197232376999258&amp;xfbml=1"></script>
+        <script type="text/javascript">
+            function postonwall()
+            {
+                FB.api('/me/feed', 'post',
+                {
+                    message: 'A good reference for APIs',
+                    link:'http://www.lookmywebpage.com/api',
+                    name:'Lookmywebpage API Reference',
+                    picture:'http://www.demo.lookmywebpage.com/publish-on-facebook-wall/Google-Twitter-Facebook.jpg',
+                    description:'Know how to work with facebook, twitter and various other APIs. Demo and source code available for key topics'
+                }, function(response) {
+                    if (!response || response.error) {
+                        alert('Oops! User Denied Access');
+                    } else {
+                        alert('Success: Content Published');
+                    }
+                });
+            }
+        </script>
+    <fb:login-button show-faces="false" width="200" max-rows="1" perms="publish_stream" onlogin="postonwall()">Click to Publish Below Content</fb:login-button>
+    <br/><br/><br/><br/><img src="wall-preview.png" style="border: 1px dotted #cccccc;"/>
+    <br/><br/><br/>
+        <div style="margin-top: 10px;float: left;text-align: center;width: 100%; padding: 5px; background-color: #CCCCCC; border: 1px solid #999999;" class="about-author">
+            <a href="http://www.themeforest.net?ref=lookmywebpage"><img src="http://envato.s3.amazonaws.com/referrer_adverts/tf_300x250_v5.gif" border="0"/></a>
+
+            &nbsp;
+            <script type="text/javascript"><!--
+                google_ad_client = "pub-5942804533883970";
+                /* 300x250, created 7/6/11 */
+                google_ad_slot = "9532936929";
+                google_ad_width = 300;
+                google_ad_height = 250;
+                //-->
+            </script>
+            <script type="text/javascript"
+                    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+            &nbsp;
+            <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=10577_0_1_10" target="_blank"><img border="0" src="http://www.elegantthemes.com/affiliates/banners/300x250.gif" width="300" height="250"></a>
+        </div>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-13233325-9']);
+            _gaq.push(['_setDomainName', '.lookmywebpage.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+
+</body>
+</html>
